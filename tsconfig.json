@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "outDir": "./dist", // Output directory
+    "types": ["node"], // Add global types
+    "typeRoots": ["./node_modules/@types", "./src/types"] // Add custom type definitions
+  },
+}

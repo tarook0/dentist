@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eeefef;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #abadb1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #abadb1;
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background-color: #abadb1;
+}
+
+/* Map marker label */
+.marker-label {
+  /* color: white !important; */
+  margin-top: -1.6rem;
+}
+
+/* MUI Autocomplete */
+.MuiAutocomplete-root {
+  border-radius: 8px;
+}
+.gm-control-active,
+.gmnoprint .gm-style-mtc {
+  /* overflow: hidden; */
+  border-radius: 8px !important;
+}
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.dark-theme .gm-control-active,
+.dark-theme .gmnoprint .gm-style-mtc button,
+.dark-theme .gmnoprint .gm-style-mtc ul > li {
+  background-color: #202225 !important;
+  color: white !important;
+  border-color: #202225 !important;
+}
+
+.dark-theme .gmnoprint .gm-style-mtc ul > li > span {
+  filter: invert(100%) !important;
+  display: inline-block;
+}
+
+.slick-track {
+  margin: 0 !important;
+}
+
+.slick-track .slick-slide {
+  min-width: 149px !important;
+}
+
+.testClassAuthorize > .MuiDataGrid-row {
+  animation: testClassAuthorize 2s forwards ease-in-out;
+}
+.testClassUnauthorize > .MuiDataGrid-row {
+  animation: testClassUnauthorize 2s forwards ease-in-out;
+}
+.asset-btn .MuiButton-startIcon {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.custom_pie_chart .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center {
+  max-width: 100%;
+}
+.asset-watch-map .gm-style-mtc-bbw {
+  display: none;
+}
+.asset-watch-map .gm-bundled-control-on-bottom {
+  bottom: 0;
+  top: 0 !important;
+}
+.asset-watch-map .gm-bundled-control-on-bottom div {
+  border-radius: 8px !important;
+}
+.asset-watch-map button[title="Toggle fullscreen view"] {
+  top: 100px !important;
+}
+@keyframes testClassAuthorize {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #5eb18e;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes testClassUnauthorize {
+  0% {
+    background-color: transparent;
+  }
+
+  50% {
+    background-color: #e76060;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+.multi-select .css-13cymwt-control {
+  min-height: 48px;
+  border-radius: 8px;
+}
+.multi-select .css-t3ipsp-control {
+  min-height: 48px;
+  border-radius: 8px;
+}

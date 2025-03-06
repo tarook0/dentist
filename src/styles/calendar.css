@@ -1,0 +1,86 @@
+.rbc-calendar button {
+  font-family: "Poppins";
+}
+
+.light-theme .rbc-calendar *:not(.rbc-event) {
+  border-color: #e2e3e4 !important;
+}
+.dark-theme .rbc-calendar *:not(.rbc-event) {
+  border-color: #343638 !important;
+}
+.rbc-month-view,
+.rbc-time-view {
+  border-width: 0;
+}
+
+.rbc-month-view .rbc-header,
+.rbc-time-view .rbc-header {
+  padding-top: 0.3rem;
+  border-width: 0 0 0 1px;
+}
+
+.rbc-time-view .rbc-header {
+  padding-bottom: 0.3rem;
+}
+
+.rbc-month-view .rbc-date-cell {
+  text-align: center;
+  padding: 0.5rem;
+}
+.rbc-date-cell button {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.light-theme .rbc-month-view .rbc-date-cell button,
+.light-theme .rbc-time-gutter {
+  color: #666666;
+}
+.dark-theme .rbc-month-view .rbc-date-cell button,
+.dark-theme .rbc-time-gutter {
+  color: #dedfe0;
+}
+
+.rbc-month-view .rbc-off-range-bg {
+  background: transparent;
+  /* border-color: transparent !important; */
+}
+.rbc-month-view .rbc-off-range button {
+  display: none;
+}
+
+.rbc-today {
+  background: transparent;
+}
+
+.rbc-allday-cell {
+  display: none;
+}
+.rbc-time-view .rbc-header {
+  border-bottom: none;
+}
+
+.rbc-time-gutter > *,
+.rbc-time-header.rbc-overflowing,
+.rbc-time-content {
+  border: 0;
+}
+
+.rbc-time-gutter {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.light-theme .rbc-time-gutter,
+.light-theme .rbc-time-header-gutter {
+  background-color: #f3f4f5;
+}
+
+.dark-theme .rbc-time-gutter,
+.dark-theme .rbc-time-header-gutter {
+  background-color: #101315;
+}
+
+.rbc-event-label{
+  display: none;
+}
