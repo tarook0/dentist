@@ -3,17 +3,19 @@ import React, { useEffect, useState } from "react";
 import SidebarListItem from "./SidebarListItem";
 import SidebarLogo from "./SidebarLogo";
 import { useLocation } from "react-router-dom";
-import { CalendarToday } from "@mui/icons-material";
+import { CalendarToday, CalendarTodayTwoTone } from "@mui/icons-material";
 
 export interface SidebarItem {
   title: string;
   icon?: string | React.ReactNode;
+  hoverIcon?: string | React.ReactNode;
   url?: string;
 }
 const items: SidebarItem[] = [
   {
     title: "Reservations",
     icon: <CalendarToday />,
+    hoverIcon: <CalendarTodayTwoTone />,
     url: "/reservations",
   },
 ];

@@ -1,54 +1,104 @@
-# React + TypeScript + Vite
+# Dentist Management System 🦷
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Dentist Management System** repository! This project is designed to help dental clinics manage patient appointments, treatments, and reservations efficiently. It includes features like drag-and-drop functionality, patient categorization, and a user-friendly interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
 
-## Expanding the ESLint configuration
+- **Patient Management**:
+  - Add, edit, and delete patient records.
+  - Categorize patients into **Incoming**, **Waiting**, and **Current**.
+  - Drag-and-drop functionality to move patients between categories.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Appointment Scheduling**:
+  - Schedule and manage patient appointments.
+  - View upcoming and past appointments.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Treatment Tracking**:
+  - Start and complete treatments for patients.
+  - Track treatment progress.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Responsive Design**:
+  - Works seamlessly on both desktop and mobile devices.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Interactive UI**:
+  - Buttons with hover effects and tooltips for better user experience.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## Technologies Used 🛠️
+
+- **Frontend**:
+  - React.js
+  - Material-UI (MUI) for styling and components
+  - Zustand for state management
+
+- **Backend**:
+  - (Add your backend technology here, e.g., Node.js, Express, MongoDB)
+
+- **Other Tools**:
+  - React Router for navigation
+  - Yup for form validation
+  - Formik for form management
+
+---
+
+## Installation 🚀
+
+Follow these steps to set up the project locally:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/tarook0/dentist.git
+   cd dentist
+   npm install
+   npm start
+## Folder Structure 📂
+<pre>
+dentist/
+├── public/                  # Static assets
+├── src/
+│   ├── components/          # Reusable components
+│   ├── pages/               # Application pages
+│   ├── store/               # Zustand state management
+│   ├── models/              # Data models and interfaces
+│   ├── App.tsx              # Main application component
+│   ├── index.tsx            # Entry point
+│   └── styles/              # Global styles
+├── .gitignore               # Files to ignore in Git
+├── package.json             # Project dependencies
+├── README.md                # This file
+└── (Other configuration files)
+</pre>
+## Usage 🖥️
+- Add a New Patient:
+    - Click the "Add Patient" button to open the form.
+    - Fill in the patient details and submit the form.
+
+- Move Patients Between Categories:
+    - Drag and drop patients from Incoming to Waiting or Current.
+- Start or Complete Treatment:
+    - Use the buttons in the Waiting or Current sections to start or complete treatments.
+- Cancel Reservations:
+    - Click the "Cancel" button to remove a patient from the system.
+    
+## Contributing 🤝
+- Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+    - Fork the repository.
+    - Create a new branch for your feature or bugfix.
+    - Commit your changes.
+    - Push your branch and submit a pull request.
+
+## License 📜
+- This project is licensed under the MIT License. See the LICENSE file for details.
+## Acknowledgments 🙏
+- Thanks to Material-UI for providing an excellent component library.
+- Special thanks to all contributors and users of this project.
+
+## Contact 📧
+- If you have any questions or suggestions, feel free to reach out:
+    - Author: Tareq Al-Habbal
+    - Email: (tareqhb01@gmail.com)
+    - GitHub: [tarook0](https://github.com/tarook0)
+
