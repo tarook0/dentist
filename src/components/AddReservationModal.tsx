@@ -52,6 +52,9 @@ export const AddReservationModal: React.FC<AddReservationModalProps> = ({
     },
   });
 
+  // Blood type options
+  const bloodTypes = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];
+
   return (
     <Modal open={open} onClose={onClose}>
       <Box
@@ -94,6 +97,7 @@ export const AddReservationModal: React.FC<AddReservationModalProps> = ({
             fullWidth
           />
           <TextField
+            select
             label="Blood Type"
             name="bloodType"
             value={formik.values.bloodType}
@@ -103,7 +107,13 @@ export const AddReservationModal: React.FC<AddReservationModalProps> = ({
             helperText={formik.touched.bloodType && formik.errors.bloodType}
             required
             fullWidth
-          />
+          >
+            {bloodTypes.map((type) => (
+              <MenuItem key={type} value={type}>
+                {type}
+              </MenuItem>
+            ))}
+          </TextField>
           <TextField
             select
             label="Reservation Type"
