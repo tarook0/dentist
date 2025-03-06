@@ -16,7 +16,7 @@ const items: SidebarItem[] = [
     title: "Reservations",
     icon: <CalendarToday />,
     hoverIcon: <CalendarTodayTwoTone />,
-    url: "/reservations",
+    url: "/",
   },
 ];
 

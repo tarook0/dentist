@@ -39,7 +39,7 @@ export const SideAppBar: React.FC = () => {
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton
-            onClick={() => navigate("/reservations")}
+            onClick={() => navigate("/")}
             sx={{
               "&:hover": {
                 backgroundColor: "#e0e0e0", // Hover effect

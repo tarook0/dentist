@@ -23,20 +23,13 @@ const SidebarLogo = ({
       }}
     >
       <Link
-        to="/reservations"
+        to="/"
         style={{
           textDecoration: "none",
           width: "100%",
         }}
       >
         {!sidebarExpanded && <Logo/>}
-        {/* <img
-          src={icons.logo}
-          width="auto"
-          height="29px"
-          alt="logo"
-          style={{ display: !sidebarExpanded ? "inline-block" : "none", marginTop: ".1rem" }}
-        /> */}
         {sidebarExpanded && (
           <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
            <LogoHeader/>
