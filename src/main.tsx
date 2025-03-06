@@ -6,7 +6,7 @@ import themeCreator from "./theme.ts";
 import { ThemeProvider } from "@mui/material";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider theme={(outerTheme) => themeCreator("light")}>
+    <ThemeProvider theme={() => themeCreator("light")}>
       <App />
     </ThemeProvider>
   </StrictMode>
